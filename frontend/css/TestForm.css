@@ -1,0 +1,102 @@
+/* Container for Add Questions Page */
+.add-questions {
+    background-color: #e6ebf0; /* Light transparent background */
+    min-height: 100vh; /* Ensure it takes full height */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* Full width */
+}
+
+/* Heading */
+.add-questions h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Success Message */
+.success-message {
+    color: #27ae60;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+/* Input Fields */
+.add-questions label {
+    font-weight: bold; /* Make labels stand out */
+}
+
+.add-questions input,
+.add-questions textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.add-questions .description-textarea {
+    height: 200px; /* Adjust as needed */
+    resize: vertical;
+    width: 100%; 
+}
+
+.add-questions .sampleTestCase-textarea {
+    height: 120px; /* Adjust as needed */
+    resize: vertical;
+    width: 100%; 
+}
+
+
+
+/* Adjust the styles for questions and test cases */
+.question,
+.test-case {
+    margin: 15px 0;
+    border: 1px solid #ecf0f1;
+    border-radius: 6px;
+    padding: 15px;
+    background-color: rgba(245, 245, 245, 0.8); /* Transparent background */
+}
+
+/* Button Styles */
+.submit {
+    display: block;
+    width:200px;
+    padding: 10px 0;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .submit-button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .add-questions {
+        padding: 10px;
+    }
+}
